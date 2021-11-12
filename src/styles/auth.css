@@ -1,0 +1,94 @@
+.auth-page {
+  height: 100%;
+}
+
+.auth-page-container {
+  min-height: 100%;
+}
+
+.auth-page-col {
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px){
+  .auth-page-col-left {
+    display: none !important;
+  }
+
+  .auth-page-col-right {
+    min-width: 100% !important;
+  }
+}
+
+.auth-title {
+  /* margin-left: 6vw; */
+  position: fixed;
+  left: 6vw;
+  bottom: 50vh;
+  transform: translate(0, 50%);
+  width: 42vw;
+}
+
+.auth-trademark {
+  position: fixed;
+  left: 6vw;
+  bottom: 10vh;
+}
+
+.auth-form {
+  width: 78%;
+  min-width: 600px;
+}
+
+/* different paddings for different forms */
+/* login/forgot-password/reset-password*/
+.login-form {
+  padding: 10% 0 4% 0;
+}
+
+.register-form {
+  padding: 3% 0 3% 0;
+}
+
+.auth-form-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.auth-form-input {
+  width: 55%;
+}
+
+.auth-form-input-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.auth-form-input-email-text {
+  flex-grow: 1;
+}
+
+.auth-form-input-email-tail {
+  /*adjust text position */
+  transform: translate(0px, 19px);
+}
+
+.register-caption {
+  /* margin-top: 5px; */
+  width: inherit;
+}
+
+.auth-form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,58 @@
+/** Noto Sans **/
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap'); */
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Lato'), url(./fonts/NotoSans/NotoSans-Regular.ttf) format('truetype');
+}
+
+/*
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 100;
+  src: local('Lato'), url(./fonts/NotoSans/NotoSans-Thin.ttf) format('truetype');
+} */
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 300;
+  src: local('Noto Sans'), url(./fonts/NotoSans/NotoSans-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  src: local('Noto Sans'), url(./fonts/NotoSans/NotoSans-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  src: local('Noto Sans'), url(./fonts/NotoSans/NotoSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 900;
+  src: local('Noto Sans'), url(./fonts/NotoSans/NotoSans-Black.ttf) format('truetype');
+}
+
+/** Azonix **/
+@font-face {
+  font-family: 'Azonix';
+  src: local('Azonix'), url(./fonts/Azonix/Azonix.otf) format('opentype');
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

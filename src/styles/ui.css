@@ -1,0 +1,177 @@
+/* DateRangePicker */
+.rdrCalendarWrapper {
+  /* font-size: 20px; */
+  width: 294px;
+}
+.rdrMonthAndYearWrapper {
+  padding: 0;
+  height: 36px;
+  margin-bottom: 10px;
+}
+.rdrMonthAndYearPickers {
+  font-size: 1rem;
+  font-family: Noto Sans;
+  font-weight: 500;
+  line-height: 1.3888888888888888;
+  letter-spacing: 0.00938em;
+}
+.rdrWeekDays {
+  width: 294px;
+}
+.rdrMonth {
+  padding: 0;
+}
+.rdrDay {
+  width: 42px;
+  height: 42px;
+}
+
+.rdrDayNumber {
+  font-size: 1rem;
+  font-family: Noto Sans;
+  font-weight: 500;
+  line-height: 1.3888888888888888;
+  letter-spacing: 0.00938em;
+}
+.rdrInRange {
+  height: 42px;
+  top: 0;
+  background: #8dd1ff;
+}
+.rdrEndEdge {
+  height: 42px;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #6dc5ff;
+}
+.rdrStartEdge {
+  height: 42px;
+  left: 0;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #6dc5ff;
+}
+
+.rdrDayActive > .rdrStartEdge {
+  background: #1ea5ff;
+}
+
+.rdrDayStartOfMonth .rdrInRange,
+.rdrDayStartOfMonth .rdrEndEdge,
+.rdrDayStartOfWeek .rdrInRange,
+.rdrDayStartOfWeek .rdrEndEdge,
+.rdrDayStartOfMonth .rdrDayInPreview,
+.rdrDayStartOfMonth .rdrDayEndPreview,
+.rdrDayStartOfWeek .rdrDayInPreview,
+.rdrDayStartOfWeek .rdrDayEndPreview {
+  left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left-width: 0;
+}
+
+.rdrDayEndOfMonth .rdrInRange,
+.rdrDayEndOfMonth .rdrStartEdge,
+.rdrDayEndOfWeek .rdrInRange,
+.rdrDayEndOfWeek .rdrStartEdge,
+.rdrDayEndOfMonth .rdrDayInPreview,
+.rdrDayEndOfMonth .rdrDayStartPreview,
+.rdrDayEndOfWeek .rdrDayInPreview,
+.rdrDayEndOfWeek .rdrDayStartPreview {
+  right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right-width: 0;
+}
+
+.rdrDayStartOfMonth .rdrStartEdge.rdrEndEdge,
+.rdrDayStartOfWeek .rdrStartEdge.rdrEndEdge,
+.rdrDayEndOfMonth .rdrStartEdge.rdrEndEdge,
+.rdrDayEndOfWeek .rdrStartEdge.rdrEndEdge,
+.rdrDayStartOfMonth .rdrDayStartPreview.rdrDayEndPreview,
+.rdrDayStartOfWeek .rdrDayStartPreview.rdrDayEndPreview,
+.rdrDayEndOfMonth .rdrDayStartPreview.rdrDayEndPreview,
+.rdrDayEndOfWeek .rdrDayStartPreview.rdrDayEndPreview {
+  left: 0;
+  border-radius: 10px;
+}
+
+.rdrDayStartOfMonth .rdrDayStartPreview.rdrDayEndPreview,
+.rdrDayStartOfWeek .rdrDayStartPreview.rdrDayEndPreview,
+.rdrDayEndOfMonth .rdrDayStartPreview.rdrDayEndPreview,
+.rdrDayEndOfWeek .rdrDayStartPreview.rdrDayEndPreview {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.rdrDayStartPreview {
+  border: none;
+  height: 42px;
+  left: 0;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #6dc5ff;
+  z-index: 0;
+}
+.rdrDayInPreview {
+  border: none;
+  height: 42px;
+  left: 0;
+  top: 0;
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+  background: #8dd1ff;
+  z-index: 0;
+}
+.rdrDayEndPreview {
+  border: none;
+  height: 42px;
+  left: 0;
+  top: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #6dc5ff;
+  z-index: 0;
+}
+
+.rdrDay:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrDayInPreview ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrDayStartPreview ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrDayEndPreview ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span {
+  color: rgba(255, 255, 255);
+}
+
+.rdrNextPrevButton {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 0.833em;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: none;
+}
+
+.rdrNextPrevButton:hover {
+  background: #eaeaea;
+}
+
+.rdrPprevButton i {
+  border-width: 4px 6px 4px 4px;
+  border-color: transparent #000000 transparent transparent;
+  transform: translate(-3px, 0px);
+}
+
+.rdrNextButton i {
+  margin: 0 0 0 7px;
+  border-width: 4px 4px 4px 6px;
+  border-color: transparent transparent transparent #000000;
+  transform: translate(3px, 0px);
+}
